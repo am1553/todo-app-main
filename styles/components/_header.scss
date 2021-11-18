@@ -57,12 +57,12 @@ body {
 
 .light {
   header {
-    background: url(/images/bg-mobile-light.jpg) no-repeat;
+    background: url(../images/bg-mobile-light.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     .header-wrapper {
       button {
-        background: url(/images/icon-moon.svg) no-repeat;
+        background: url(../images/icon-moon.svg) no-repeat;
         background-size: contain;
         background-position: center;
       }
@@ -82,11 +82,11 @@ body {
 }
 .dark {
   header {
-    background: url(/images/bg-mobile-dark.jpg) no-repeat;
+    background: url(../images/bg-mobile-dark.jpg) no-repeat;
     background-size: cover;
     .header-wrapper {
       button {
-        background: url(/images/icon-sun.svg) no-repeat;
+        background: url(../images/icon-sun.svg) no-repeat;
         background-size: contain;
         background-position: center;
       }
