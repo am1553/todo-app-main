@@ -160,6 +160,7 @@ body main .todo-container {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 90%;
+  border-radius: 5px;
 }
 
 body main .todo-container .todo-lists {
@@ -173,6 +174,7 @@ body main .todo-container .todo-lists li {
   display: flex;
   position: relative;
   padding-left: 4rem;
+  margin: 2rem 0;
 }
 
 body main .todo-container .todo-lists li .tick,
@@ -184,9 +186,9 @@ body main .todo-container .todo-lists li .cross {
 
 body main .todo-container .todo-lists li .tick {
   left: 20px;
-  background: url(../images/icon-check.svg) no-repeat;
-  background-position: center;
-  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #e3e4f1;
 }
 
 body main .todo-container .todo-lists li .cross {
@@ -194,5 +196,9 @@ body main .todo-container .todo-lists li .cross {
   background: url(../images/icon-cross.svg) no-repeat;
   background-position: center;
   border: none;
+}
+
+.light main .todo-container {
+  background-color: #fafafa;
 }
 /*# sourceMappingURL=index.css.map */
