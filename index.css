@@ -160,6 +160,7 @@ body main .todo-container {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 90%;
+  min-height: 350px;
   border-radius: 5px;
 }
 
@@ -175,6 +176,7 @@ body main .todo-container .todo-lists li {
   position: relative;
   padding-left: 4rem;
   margin: 2rem 0;
+  font-size: calc(12rem / 16);
 }
 
 body main .todo-container .todo-lists li .tick,
@@ -187,8 +189,13 @@ body main .todo-container .todo-lists li .cross {
 body main .todo-container .todo-lists li .tick {
   left: 20px;
   border-radius: 50%;
-  background-color: transparent;
+  background: transparent;
   border: 1px solid #e3e4f1;
+}
+
+body main .todo-container .todo-lists li .completed {
+  background: -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
+  background: linear-gradient(#57ddff, #c058f3);
 }
 
 body main .todo-container .todo-lists li .cross {
@@ -200,5 +207,25 @@ body main .todo-container .todo-lists li .cross {
 
 .light main .todo-container {
   background-color: #fafafa;
+}
+
+.light main .todo-container .todo-lists li {
+  color: #484b6a;
+}
+
+.dark main .todo-container {
+  background-color: #25273c;
+}
+
+.dark main .todo-container .todo-lists li {
+  color: #e4e5f1;
+}
+
+.dark main .todo-container .todo-lists li .circle {
+  border: 1px solid #393a4b;
+}
+
+.dark main .todo-container .todo-lists li .cross {
+  border: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -6,6 +6,7 @@ body {
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
+      min-height: 350px;
       border-radius: 5px;
       .todo-lists {
         list-style: none;
@@ -15,6 +16,8 @@ body {
           position: relative;
           padding-left: 4rem;
           margin: 2rem 0;
+          font-size: calc(12rem / 16);
+
           .tick,
           .cross {
             width: 25px;
@@ -24,8 +27,11 @@ body {
           .tick {
             left: 20px;
             border-radius: 50%;
-            background-color: transparent;
+            background: transparent;
             border: 1px solid #e3e4f1;
+          }
+          .completed {
+            background: $primary-check-background;
           }
           .cross {
             right: 20px;
@@ -43,6 +49,31 @@ body {
   main {
     .todo-container {
       background-color: $lt-very-light-gray;
+
+      .todo-lists {
+        li {
+          color: $lt-very-dark-grayish-blue;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  main {
+    .todo-container {
+      background-color: $dt-very-dark-desaturated-blue;
+      .todo-lists {
+        li {
+          color: $dt-light-grayish-blue;
+          .circle {
+            border: 1px solid #393a4b;
+          }
+          .cross {
+            border: none;
+          }
+        }
+      }
     }
   }
 }
