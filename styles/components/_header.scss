@@ -1,0 +1,109 @@
+body {
+  header {
+    height: 250px;
+    width: 100%;
+    background-color: red;
+    .header-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem 0rem 0rem;
+      .logo {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 10px;
+      }
+      button {
+        height: 2rem;
+        width: 2rem;
+        border: none;
+      }
+    }
+
+    .todo-input {
+      width: 90%;
+      margin: 2rem auto;
+      position: relative;
+      input {
+        width: 100%;
+        max-width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        font-size: calc(12rem / 16);
+      }
+      .circle-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        background-color: transparent;
+        border: none;
+        .circle {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.light {
+  header {
+    background: url(/images/bg-mobile-light.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    .header-wrapper {
+      button {
+        background: url(/images/icon-moon.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    .todo-input {
+      input,
+      input::placeholder {
+        color: $lt-dark-grayish-blue;
+      }
+    }
+    .circle-btn {
+      .circle {
+        border: 1px solid #e3e4f1;
+      }
+    }
+  }
+}
+.dark {
+  header {
+    background: url(/images/bg-mobile-dark.jpg) no-repeat;
+    background-size: cover;
+    .header-wrapper {
+      button {
+        background: url(/images/icon-sun.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    .todo-input {
+      input {
+        background-color: $dt-very-dark-desaturated-blue;
+        color: $dt-dark-grayish-blue;
+      }
+      input::placeholder {
+        color: $dt-dark-grayish-blue;
+      }
+    }
+    .circle-btn {
+      .circle {
+        border: 1px solid #393a4b;
+      }
+    }
+  }
+}
